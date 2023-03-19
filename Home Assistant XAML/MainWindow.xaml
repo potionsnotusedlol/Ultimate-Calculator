@@ -1,0 +1,30 @@
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+	x:Class="Home_Assistant_XAML.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:Home_Assistant_XAML"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+
+	<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1920">
+        <TextBlock Text="Number:"	HorizontalAlignment="Center"	FontSize="16" />
+        
+        <StackPanel Orientation="Horizontal"    HorizontalAlignment="Center"    VerticalAlignment="Center">
+            <TextBox x:Name="firstNumberField"	HorizontalAlignment="Center"	/>
+            <TextBox x:Name="secondNumberField"	HorizontalAlignment="Center"	/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"    HorizontalAlignment="Center"    VerticalAlignment="Center">
+            <Button Content="+" Margin="2.5 ,10"    HorizontalAlignment="Center"    FontSize="18"    Click="add" />
+            <Button Content="-" Margin="2.5, 10"    HorizontalAlignment="Center"    FontSize="18"    Click="subtract"    />
+            <Button Content="×" Margin="2.5, 10"    HorizontalAlignment="Center"    FontSize="18"    Click="multiply"    />
+            <Button Content="÷" Margin="2.5, 10"    HorizontalAlignment="Center"    FontSize="18"    Click="divide"  />
+        </StackPanel>
+
+        <TextBlock x:Name="resultField" Margin="20" HorizontalAlignment="Center"    VerticalAlignment="Center"  FontSize="40"   />
+    </StackPanel>
+</Window>
